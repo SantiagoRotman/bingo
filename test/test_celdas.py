@@ -1,5 +1,6 @@
-from src.bingo import carton
+from src.bingo import carton #Agrego la funcion carton de src/bingo.py
 
+#Compruebo que la cantidad de celdas ocupadas sean mayor o igual a 15
 def test_no_menor_15():
 	carton1 = carton()
 	contador = 0
@@ -8,6 +9,7 @@ def test_no_menor_15():
 			contador += celda
 	assert contador >= 15
 
+#Compruebo que la cantidad de celdas ocupadas sean menor o igual a 15
 def test_no_mayor_15():
 	carton1 = carton()
 	contador = 0
@@ -16,6 +18,7 @@ def test_no_mayor_15():
 			contador += celda
 	assert contador <= 15
 
+#Compruebo que las dimenciones sean 9x3
 def test_dimensiones():
 	carton1 = carton()
 	contador_x = 0
@@ -28,6 +31,7 @@ def test_dimensiones():
 
 	assert contador_x == 3
 
+#Compruebo que ninguna columna este vacia
 def test_columnas_ocupadas():
 	carton1 = carton()
 	contador = 0
