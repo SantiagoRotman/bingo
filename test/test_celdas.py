@@ -18,7 +18,7 @@ def test_no_mayor_15():
 			contador += celda
 	assert contador <= 15
 
-#Compruebo que las dimenciones sean 9x3
+#Compruebo que las dimenciones sean 9x3.
 def test_dimensiones():
 	carton1 = carton()
 	contador_x = 0
