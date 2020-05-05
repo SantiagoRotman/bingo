@@ -41,4 +41,11 @@ def columnas_ocupadas(carton1):
 			contador += 1
 		if contador == 0:
 			return False
-		return True
+	return True
+
+def entre_1_y_90(carton1):
+	for fila in carton1:
+		for celda in fila:
+			if celda < 0 or celda >= 90:
+				return False
+	return True
