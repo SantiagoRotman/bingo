@@ -43,9 +43,21 @@ def columnas_ocupadas(carton1):
 			return False
 	return True
 
+#Compruebo que los numeros esten entre el uno y el noventa
 def entre_1_y_90(carton1):
 	for fila in carton1:
 		for celda in fila:
 			if celda < 0 or celda >= 90:
 				return False
+	return True
+
+def menor_izq_a_der(carton):
+	aux = -1
+	for fila in carton:
+		aux = -1
+		for celda in fila:
+			if celda <= aux and celda != 0:
+				return False
+			if celda != 0:
+				aux = celda
 	return True
