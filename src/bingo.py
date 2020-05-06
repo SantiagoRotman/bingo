@@ -61,3 +61,13 @@ def menor_izq_a_der(carton):
 			if celda != 0:
 				aux = celda
 	return True
+
+def menor_arriba_a_abajo(carton):
+	for i in range(9):
+		if carton[0][i] >= carton[1][i] and carton[1][i] != 0:
+			return False
+		if carton[1][i] >= carton[2][i] and carton[2][i] != 0:
+			return False
+		if carton[0][i] >= carton[2][i] and carton[2][i] != 0:
+			return False
+	return True
