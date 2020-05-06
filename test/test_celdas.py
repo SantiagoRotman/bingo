@@ -6,7 +6,7 @@ from src.bingo import columnas_ocupadas #Agrego la funcion columnas_ocupadas de 
 #Funcion carton: 0 celda desocupada, 1 celda ocupada
 def carton():
     mi_carton = (
-        (2,0 ,0 ,10,12,0 ,15,0 ,19),
+        (2,0 ,0 ,10,12, 0,14 ,0 ,19),
         (0,25,0 ,27,0 ,58,69,71,89),
         (0,0 ,20,0 ,25,71,0 ,82 ,0)
     )
