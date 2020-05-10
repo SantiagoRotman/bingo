@@ -71,3 +71,14 @@ def menor_arriba_a_abajo(carton):
 		if carton[0][i] >= carton[2][i] and carton[2][i] != 0:
 			return False
 	return True
+
+def no_repetidos(carton):
+	numeros = set()
+	for fila in carton:
+		for celda in fila:
+			if (celda in numeros) and celda != 0:
+				return False
+			numeros.add(celda)
+	return True
+
+
