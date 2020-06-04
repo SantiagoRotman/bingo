@@ -7,7 +7,7 @@ from src.bingo import filas_con_5
 def carton():
     mi_carton = (
         (2,0 ,0 ,10,12,0 ,14 ,0  ,19),
-        (0,15,0 ,27,0 ,58,69 ,72 ,0),
+        (0,15,0 ,27,0 ,58,69 ,0 ,72),
         (13,0 ,20,0 ,26,71,0  ,82 ,0)
     )
     return mi_carton

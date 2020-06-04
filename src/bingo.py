@@ -90,3 +90,17 @@ def filas_con_5(carton):
 		if ocupadas != 5:
 			return False
 	return True
+
+def no_tres_consecutivas_vacias_o_llenas(carton):
+	for b in range(3):
+		for i in range(6):
+			ocupadas = 0;
+			if carton[b][i] != 0:
+				ocupadas += 1
+			if carton[b][i+1] != 0:
+				ocupadas += 1
+			if carton[b][i+2] != 0:
+				ocupadas += 1
+			if ocupadas == 0 or ocupadas == 3:
+				return False
+	return True
