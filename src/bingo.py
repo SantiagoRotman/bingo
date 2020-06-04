@@ -28,8 +28,8 @@ def dimensiones(carton1):
 			return False
 	return contador_x == 3
 
-#Compruebo que ninguna columna este vacia
-def columnas_ocupadas(carton1):
+#Compruebo que ninguna columna este vacia o completa
+def columnas_ni_vacias_ni_llenas(carton1):
 	contador = 0
 	for i in range(9):
 		contador = 0
@@ -39,7 +39,7 @@ def columnas_ocupadas(carton1):
 			contador += 1
 		if carton1[2][i] != 0:
 			contador += 1
-		if contador == 0:
+		if contador == 0 or contador == 3:
 			return False
 	return True
 
@@ -90,5 +90,3 @@ def filas_con_5(carton):
 		if ocupadas != 5:
 			return False
 	return True
-
-
