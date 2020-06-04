@@ -81,4 +81,14 @@ def no_repetidos(carton):
 			numeros.add(celda)
 	return True
 
+def filas_con_5(carton):
+	for fila in carton:
+		ocupadas = 0
+		for celda in fila:
+			if celda != 0:
+				ocupadas += 1
+		if ocupadas != 5:
+			return False
+	return True
+
 
