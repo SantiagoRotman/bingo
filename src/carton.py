@@ -60,9 +60,7 @@ def intentoCarton():
 def imprimirCarton(carton):
     print("\n")
     for fila in carton:
-        for celda in fila:
-            print(celda)
-        print("\n")
+        print(fila)
     print("\n")
 
 def main():
