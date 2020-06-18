@@ -1,3 +1,6 @@
+from carton import intentoCarton
+from carton import imprimirCarton
+
 #Compruebo que la cantidad de celdas ocupadas sean meyor o igual a 15
 def no_menor_15(carton1):
 	contador = 0
@@ -104,3 +107,26 @@ def no_tres_consecutivas_vacias_o_llenas(carton):
 			if ocupadas == 0 or ocupadas == 3:
 				return False
 	return True
+
+def testear_carton(carton):
+
+    return (dimensiones(carton) and
+    no_mayor_15(carton) and
+    no_menor_15(carton) and
+    columnas_ni_vacias_ni_llenas(carton) and
+    entre_1_y_90(carton) and
+    menor_izq_a_der(carton) and
+    menor_arriba_a_abajo(carton) and
+    no_repetidos(carton) and
+    filas_con_5(carton) and
+    no_tres_consecutivas_vacias_o_llenas(carton))
+
+def generar_carton():
+    carton = intentoCarton()
+
+    while testear_carton(carton) == False:
+        carton = intentoCarton()
+
+    return carton
+
+print (imprimirCarton(generar_carton()))
