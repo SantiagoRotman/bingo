@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/SantiagoRotman/bingo.svg?branch=master)](https://travis-ci.org/SantiagoRotman/bingo)
+[![Build Status](https://travis-ci.org/SantiagoRotman/bingo.svg?branch=master)](https://travis-ci.org/SantiagoRotman/bingo)  [![Coverage Status](https://coveralls.io/repos/github/SantiagoRotman/bingo/badge.svg?branch=master)](https://coveralls.io/github/SantiagoRotman/bingo?branch=master)
 
 # Bingo
 
