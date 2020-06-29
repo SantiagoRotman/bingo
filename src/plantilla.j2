@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background: #131313;
+            }
+
+            .tablero {
+                border: 3px solid #111111;
+                margin: 2em;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .fila {
+                display: flex;
+            }
+
+            .fila > div {
+                border: 0px;
+                width: 4em;
+                height: 4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .celda {
+                background: #069B6E;
+                color: black;
+            }
+
+            .nada {
+                background: #3F454E
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class ="tablero">
+            {% for fila in carton %}
+                <div class ="fila">
+                    {% for celda in fila %}
+                        {% if celda == 0 %}
+                            <div class ="nada"></div>
+                        {% else %}
+                            <div class ="celda">{{celda}}</div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
