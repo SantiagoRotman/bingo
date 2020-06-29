@@ -1,2 +1,4 @@
 jinja2
-pytest pytest-cov coveralls
+pytest 
+pytest-cov 
+coveralls
