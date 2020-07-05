@@ -96,7 +96,7 @@ def filas_con_5(carton):
 
 def no_tres_consecutivas_vacias_o_llenas(carton):
 	for b in range(3):
-		for i in range(6):
+		for i in range(7):
 			ocupadas = 0;
 			if carton[b][i] != 0:
 				ocupadas += 1
@@ -165,12 +165,6 @@ def intentoCarton():
 
     return carton
 
-def imprimirCarton(carton):
-    print("\\n")
-    for i in range(3):
-        print(carton[i])
-        print("\\n")
-    print("\\n")
 
 
 def testear_carton(carton):
@@ -186,6 +180,17 @@ def testear_carton(carton):
     filas_con_5(carton) and
     no_tres_consecutivas_vacias_o_llenas(carton))
 
+def imprimirCarton(carton):
+    if testear_carton(carton):
+        print("\\n")
+        for i in range(3):
+            print(carton[i])
+            print("\\n")
+        print("\\n")
+        return 1
+    else:
+        return 0
+
 def generar_carton():
     carton = intentoCarton()
 
@@ -194,4 +199,4 @@ def generar_carton():
 
     return carton
 
-print (imprimirCarton(generar_carton()))
+#print (imprimirCarton(generar_carton()))

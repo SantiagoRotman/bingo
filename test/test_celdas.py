@@ -6,9 +6,9 @@ from src.bingo import filas_con_5
 #Funcion carton: 0 celda desocupada, 1 celda ocupada
 def carton():
     mi_carton = (
-        (2,0 ,0 ,10,12,0 ,14 ,0  ,19),
-        (0,15,0 ,27,0 ,58,69 ,0 ,72),
-        (13,0 ,20,0 ,26,71,0  ,82 ,0)
+        (2, 0 ,0 ,10,12,0 ,14 ,0  ,19),
+        (0, 15,0 ,27,0 ,69 ,0  ,72 ,73),
+        (13,0 ,17,0 ,26,71,0  ,82 ,0)
     )
     return mi_carton
 
