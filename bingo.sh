@@ -4,7 +4,7 @@
 #          Crea un archivo html con un carton de bingo o lo muestra por consola
 # ------------------------------------------------------------------
 
-USAGE="Usar: ./pull.sh -h (help)  -w (web)  -c (consola)"
+USAGE="Usar: ./bingo.sh -h (help)  -w (web)  -c (consola)"
 
 #--- Procesamiento de Opciones --------------------------------------------
 if [ $# == 0 ] ; then
