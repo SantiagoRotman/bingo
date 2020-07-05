@@ -2,9 +2,10 @@
 
 # Bingo
 
-> Un programa hecho en python que crea un archivo HTML con un carton aleatorio de bingo que sigue algunas reglas.
+> Un programa hecho en python que crea un archivo HTML con un carton aleatorio de bingo que sigue algunas reglas o lo imprime por consola.
+> Escrito para Adaptación Del Ambiente De Trabajo, Instituto Politécnico Superior "Gral. San Martín"
 
-**Reglas**
+## Reglas
 
 - Los números del carton se encuentran en el rango 1 a 90.
 - Cada columna de un carton (contando de izquierda a derecha) contiene numeros que van del 1 al 9, 10 al 19, 20 al 29 ..., 70 al 79 y 80 al 90.
@@ -20,6 +21,17 @@
 - En una fila no existen más de dos celdas vacías consecutivas.
 - En una fila no existen más de dos celdas ocupadas consecutivas.
 
-**Requerimientos**
+## Uso
+Ejecutar el script bingo.sh por consola con la opcion -c
+```
+./bingo.sh -c
+```
+Para la version web:
+Ejecutar el script bingo.sh por consola con la opcion -w
+```
+./bingo.sh -w
+```
+Luego abrir bingo.html con un navegador web
 
-**Licencia**
+## Licencia
+	GNU General Public License v3.0
