@@ -188,8 +188,6 @@ def imprimirCarton(carton):
             print("\\n")
         print("\\n")
         return 1
-    else:
-        return 0
 
 def generar_carton():
     carton = intentoCarton()
