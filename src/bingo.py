@@ -194,4 +194,4 @@ def generar_carton():
 
     return carton
 
-#print (imprimirCarton(generar_carton()))
+print (imprimirCarton(generar_carton()))
