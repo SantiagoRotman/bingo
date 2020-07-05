@@ -3,7 +3,7 @@
 # Bingo
 
 > Un programa hecho en python que crea un archivo HTML con un carton aleatorio de bingo que sigue algunas reglas o lo imprime por consola.
-> Escrito para Adaptación Del Ambiente De Trabajo, Instituto Politécnico Superior "Gral. San Martín"
+> Creado para la materia Adaptación Del Ambiente De Trabajo, Instituto Politécnico Superior "Gral. San Martín"
 
 ## Reglas
 
