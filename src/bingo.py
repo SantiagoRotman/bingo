@@ -166,10 +166,11 @@ def intentoCarton():
     return carton
 
 def imprimirCarton(carton):
-    print("\n")
-    for fila in carton:
-        print(fila)
-    print("\n")
+    print("\\n")
+    for i in range(3):
+        print(carton[i])
+        print("\\n")
+    print("\\n")
 
 
 def testear_carton(carton):
