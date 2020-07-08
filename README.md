@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/SantiagoRotman/bingo.svg?branch=master)](https://travis-ci.org/SantiagoRotman/bingo)  [![Coverage Status](https://coveralls.io/repos/github/SantiagoRotman/bingo/badge.svg?branch=master)](https://coveralls.io/github/SantiagoRotman/bingo?branch=master)
+[![Build Status](https://travis-ci.org/SantiagoRotman/bingo.svg?branch=master)](https://travis-ci.org/SantiagoRotman/bingo)  [![Coverage Status](https://coveralls.io/repos/github/SantiagoRotman/bingo/badge.svg?branch=master)](https://coveralls.io/github/SantiagoRotman/bingo?branch=master)[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/SantiagoRotman/bingo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/SantiagoRotman/bingo/?branch=master)
 
 # Bingo
 
